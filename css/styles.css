@@ -1,0 +1,326 @@
+/* ==========================================================================
+   Common Styles
+   ========================================================================== */
+
+html {
+	background: url('../img/background-viewport.png');
+	font-size: 0.85em;
+	color: #666;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #666;
+	outline: 0;
+}
+
+h4 + a {
+	position: relative;
+	top: 1px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.container {
+	/*max-width: 960px;*/ /*switch to this when designing for small screens */
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+nav { background: url('../img/sprite-header-background.png') center top repeat-x; }*
+
+nav ul {
+	margin: 0;
+	padding: 5px 20px 5px 0;
+}
+
+nav ul li {
+	float: right;
+	margin-left: 16px;
+	width: auto;
+}
+
+nav ul li#letsTalk,
+nav ul li#workLink,
+nav ul li#linkedIn div {
+	height: 24px;
+	border-radius: 5px;
+	background-image: url('../img/buttons/transparency-10.png');
+}
+
+nav ul li#letsTalk {
+	width: 28px;
+}
+
+nav ul li#linkedIn div {
+	float: right;
+	min-width: 28px;
+}
+
+nav ul a {
+	display: block;
+	min-width: 28px;
+	height: 24px;
+	text-indent: -9999px;
+	overflow: hidden;
+	outline: none;
+}
+
+nav ul #workLink a {
+	width: auto;
+}
+
+nav ul #workLink a div {
+	width: 12px;
+	height: 25px;
+}
+
+nav ul #workLink a div.left {
+	background: url('../img/buttons/sprite-buttons2.png') -6px -6px no-repeat;
+	float: left;
+}
+
+nav ul #workLink a div.right {
+	background: url('../img/buttons/sprite-buttons2.png') -116px -6px no-repeat;
+	float: right;
+}
+
+
+nav ul #letsTalk a {
+	background: url('../img/buttons/sprite-buttons2.png') -2px -32px no-repeat;
+}
+
+#linkedIn a {
+	background: url('../img/buttons/sprite-buttons2.png') right -6px no-repeat;
+} 
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+#identity {
+	height: 72px;
+	background: transparent url('../img/background-grey.png') center center;
+}
+
+#layer {
+	background: transparent url('../img/background-brushes2.png') center -60px repeat-x;
+}
+
+header {
+	height: 34px;
+}
+
+header div.container {
+	position: relative;
+	height: 72px;
+}
+
+header .marks {
+	position: relative;
+	top: -1px;
+	left: -2%;
+}
+
+header .marks span {
+	position: absolute;
+	width: 24px;
+	height: 36px;
+}
+
+header #quotemark-1 {
+	top: 1px;
+	left: 0;
+	width: 30px;
+	height: 45px;
+	z-index: 10;
+}
+
+header #quotemark-2 {
+	top: 0;
+	left: 15px;
+}
+
+header #quotemark-3 {
+	top: 25px;
+	left: -8px;
+}
+
+header #quotemark-4 {
+	top: 25px;
+	left: 7px;
+}
+
+header a #textmark {
+	position: absolute;
+	margin: 0;
+	left: 2.5%;
+	bottom: 0;
+}
+
+#quotemark-1 {background: url('../img/logo/quote-top-left-white.png') center center no-repeat;}
+#quotemark-2 {background: url('../img/logo/quote-top-right-white.png') center center no-repeat;}
+#quotemark-3 {background: url('../img/logo/quote-bottom-left-white.png') center center no-repeat;}
+#quotemark-4 {background: url('../img/logo/quote-bottom-left-white.png') center center no-repeat;}
+#textmark {
+	width: 243px;
+	height: 34px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url('../img/logo/textmark-white.png') center center no-repeat;
+}
+
+aside {
+	height: 90px;
+}
+
+aside p {
+	padding: 6px 2.5%;
+	color: #485f65;
+	font-size: 1.4rem;
+	font-family: 'Viga', sans-serif;
+	text-shadow: 0px 1px 0px white;
+
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+#my-work header {
+	color: white;
+	background: url('../img/sprite-header-background.png')  center -36px repeat-x;
+	font-family: 'Viga', 'Arial Narrow', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+#my-work header h2 span {
+	margin: 0 2.5%;
+	color: #eae2db;
+	font-size: 20px;
+	line-height: 36px;
+	text-shadow:
+		-1px 0 #2f4a57,
+		-1px -1px #2f4a57,
+		0 1px#2f4a57,
+		1px -1px #2f4a57,
+     1px 0 #2f4a57,
+    -1px 1px #2f4a57,
+    1px 1px #2f4a57,
+     0 -1px #2f4a57,
+     0 0 4px #2f4a57;
+}
+
+#my-work header h2 span:before {
+	content: "\007B\0020";
+}
+
+#my-work header h2 span:after {
+	content: "\0020\007D";
+}
+
+article div.container {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+article section {
+	margin: 0 2.5%;
+	width: 36%;
+	float: left;
+}
+
+article h3 {
+	color: #485f65;
+	margin-bottom: 0;
+	margin-top: -6px;
+	font-family: 'Viga', sans-serif;
+	font-size: 1.6em;
+	text-shadow: 0 1px 0 white;
+}
+
+article p {
+	margin-bottom: 9px;
+	margin-top: 9px;
+}
+
+article dl {
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+
+article dt:after {
+	content: "\003A\0020";
+}
+
+article dt {
+	display: block;
+	clear: left;
+	float: left;
+	margin: 0;
+	color: #4b6369;
+	font-weight: bold;
+}
+
+article dd {
+	float: left;
+	margin-left: 6px;
+}
+
+article dt, article dd {
+	line-height: 1.5em;
+}
+
+article .screenshot {
+	margin: 0 18px;
+	width: 528px;
+	position: relative;
+	float: right;
+	overflow: hidden;
+	-webkit-filter: grayscale(100%); 
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray; /* IE6-9 */
+}
+
+article div.container:hover .screenshot {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%); 
+}
+
+article .browser.screenshot:after {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	content: url(../img/foreground-screenshot.png);
+	height: 48px;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+
+footer {
+	padding: 12px 0;
+	color: #444;
+	background: transparent url('../img/background-grey.png') center center;
+}
+
+footer p {
+	box-sizing: border-box;
+	padding: 0 2%;
+}
+
+
